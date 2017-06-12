@@ -1,0 +1,14 @@
+body {
+  background-color: #fff;
+  font-size: 12px; }
+  body h1 {
+    color: green;
+    line-height: 10px;
+    box-shadow: 1px 1px 1px #ccc;
+    box-sizing: border-box;
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }

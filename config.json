@@ -1,0 +1,8 @@
+{
+  "project": "mycaigou",
+  "localserver": {
+    "host": "0.0.0.0",
+    "port": "9999"
+  },
+  "tinypngapi": "puf0-q7Iwbo_70IVnewSSdeBeXAtCUj_"
+}

@@ -1,0 +1,23 @@
+@import "_variables";
+@import "bootstrap/mixins";
+
+/**
+ * 通用css
+ */
+
+.display-i {
+  display: inline !important;
+}
+
+.display-b {
+  display: block !important;
+}
+
+.display-ib {
+  display: inline-block !important;
+}
+
+.align-m {
+  display: inline-block;
+  vertical-align: middle;
+}

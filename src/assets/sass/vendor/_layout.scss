@@ -1,0 +1,95 @@
+@import "_variables";
+@import "bootstrap/mixins";
+
+/**
+ * 通用布局
+ */
+
+// 内容栏
+.content {
+  min-height: 550px;
+}
+// 内容栏.end
+
+// 顶部条
+.topbar {
+  padding: 2px;
+  font-size: 12px;
+}
+.topbar-nav {
+  list-style: none;
+  li {
+    float: left;
+    a {
+      padding: 0 10px;
+      border-left: 1px solid #ddd;
+    }
+    &:first-child {
+      a {
+        border: none;
+      }
+    }
+  }
+}
+// 顶部条.end
+
+// 主导航
+.navbar-main {
+  background: $brand-primary;
+  .navbar-brand {
+    color: #fff;
+  }
+}
+// 主导航.end
+
+// 侧边栏
+.sidebar {
+  ul {
+    list-style: none;
+    margin: 0 0 0 15px;
+    padding: 0;
+  }
+  .sidebar-list {
+    > li {
+      margin-bottom: 10px;
+      > span {
+        font-size: 16px;
+        color: #999;
+        i {
+          display: inline-block;
+          margin-right: 5px;
+          vertical-align: -3px;
+        }
+      }
+    }
+    ul {
+      padding: 10px 0;
+      li {
+        a {
+          display: block;
+          padding: 10px;
+          margin-left: -30px;
+          padding-left: 30px;
+          color: $text-color;
+        }
+
+        &.active,
+        &:hover {
+          a {
+            color: $brand-primary;
+            background-color: lighten($brand-primary, 45%);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+// 侧边栏.end
+
+// 底部菜单
+.footer {
+  border-top: 2px solid $brand-primary;
+  padding: 20px 0;
+}
+// 底部菜单.end

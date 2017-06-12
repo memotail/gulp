@@ -1,0 +1,57 @@
+<div id="sidebar" class="col-md-2 sidebar">
+  <aside>
+    <ul class="sidebar-list">
+      <li>
+        <span><i class="icon-message"></i>我的消息中心</span>
+        <ul>
+          <li><a href="/">首页</a></li>
+        </ul>
+      </li>
+      <li>
+        <span><i class="icon-manager"></i>我的合作情况</span>
+        <ul>
+          <li><a href="#">符合我的采购需求</a></li>
+          <li><a href="#">我参与的招标</a></li>
+          <li><a href="#">邀请我的招标</a></li>
+        </ul>
+      </li>
+      <li>
+        <span><i class="icon-enterprise"></i>我的消息中心</span>
+        <ul>
+          <li><a href="#">我的通知</a></li>
+        </ul>
+      </li>
+      <li>
+        <span><i class="icon-access"></i>我的消息中心</span>
+        <ul>
+          <li><a href="#">我的通知</a></li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+</div>
+<script>
+  (function() {
+    // $('.sidebar').find('a[href^="'+ location.pathname +'"]').addClass('active');
+
+    var pathname = location.pathname;
+    var sidebar = document.getElementById('sidebar');
+
+    if (sidebar) {
+      var a = sidebar.getElementsByTagName('a');
+
+      if (a.length) {
+        for (var i = 0, l = a.length; i < l; i++) {
+          var href = a[i].getAttribute('href');
+          var parentNode = a[i].parentNode;
+
+          if (href && href.indexOf(pathname) !== -1) {
+            parentNode.className = parentNode.className + ' active';
+          } else {
+            parentNode.className = parentNode.className.replace(/\s?\bactive\b\s?/, '');
+          }
+        }
+      }
+    }
+  })();
+</script>
